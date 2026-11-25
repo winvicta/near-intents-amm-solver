@@ -8,3 +8,4 @@ description = "Independent Rust implementation of the NEAR Intents AMM solver"
 publish = false
 
 [dependencies]
+num-bigint = "=0.4.6"

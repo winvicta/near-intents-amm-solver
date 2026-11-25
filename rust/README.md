@@ -1,8 +1,8 @@
 # Rust solver
 
 Independent Rust implementation based on the original TypeScript solver.
-Current checkpoint: **0 — project skeleton**. This program currently prints a
-status message; pricing, signing, and networking are not implemented.
+Current checkpoint: **1 — AMM quote calculation**. The program calculates
+sample exact-input and exact-output prices. Signing and networking are not implemented.
 
 ## Run in Arch WSL
 
@@ -20,9 +20,9 @@ cargo clippy --locked --all-targets -- -D warnings
 With an existing clone, run `git fetch origin` and
 `git switch --track origin/codex/rust`, then enter `rust/`.
 
-No Node.js installation, keys, account balances, or network connection is needed
-to build this checkpoint with an installed Rust 1.85+ toolchain. There are no
-external Rust dependencies yet. The lockfile is committed for reproducibility.
+Rust 1.85+ is required. Cargo downloads dependencies on the first build; after
+that, the example and tests can run offline. Node.js, keys, and account balances
+are not needed. The lockfile is committed for reproducibility.
 
 ## Source and scope
 
@@ -60,3 +60,6 @@ user's local editions; page numbers are printed pages, not PDF viewer numbers.
 The books themselves are not included in this repository.
 
 Start with [step 0](notes/00-project.md).
+
+Continue with [step 1 — AMM pricing](notes/01-amm.md). It explains the formulas,
+the tests, and two intentional differences from TypeScript decimal rounding.
