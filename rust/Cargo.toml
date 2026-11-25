@@ -1,0 +1,10 @@
+[package]
+name = "near-intents-solver"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+description = "Independent Rust implementation of the NEAR Intents AMM solver"
+publish = false
+
+[dependencies]
