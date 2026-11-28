@@ -1,0 +1,14 @@
+[package]
+name = "near_intents_amm_solver"
+version = "0.1.0"
+edition = "2024"
+description = "Rust port of defuse-protocol/near-intents-amm-solver, built bottom up for learning"
+license = "MIT"
+
+# One package, two crates (Rust 1 p.124):
+#   src/lib.rs  -> library crate `near_intents_amm_solver` (all the logic)
+#   src/main.rs -> binary crate of the same name (a thin wrapper)
+# Cargo finds both by these file names, so no [lib] or [[bin]] section is needed.
+
+[dependencies]
+# None yet. Step 0 uses only the standard library.
